@@ -31,4 +31,4 @@
 ## Developer Notes
 * My gmail account information as well as admin account information is inside of the .env file. You can log into the admin account by using the credentials inside of the .env file.
 * To view the document which contains screenshots click the link below.
-    * [Screenshot Document](/Feature%20Word%20Documents)
+    * [Screenshot Document](/Documents)
