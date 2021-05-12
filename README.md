@@ -24,7 +24,7 @@
 3. Run the program by having a docker-compose configuration on Pycharm or by running a "docker-compose up" command on the "main" branch
 4. Go to localhost:5000 or 0.0.0.0:5000 to view the web application
 5. Register a new account with a username, password, and a **valid** email that you have access to
-6. Once you click register and you will receive the confirmation code in an email from "mikeandstanley.website@gmail.com"
+6. Once you click register and you will receive the confirmation code in an email from "hs57njit1234@gmail.com"
 7. Copy and paste the confirmation code into the box on the confirmation page
 8. Once confirmed, you can login into the account that you just registered 
 9. Enjoy!
