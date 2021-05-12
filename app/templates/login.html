@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+
+    <!-- Bootstrap CSS -->
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <title>Welcome! Please Login</title>
+</head>
+<style>
+    body#LoginForm {
+            background-color: #3b86b8;
+            background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1000px;
+            padding: 10px;
+        }
+</style>
+{% block content %}
+<body id="LoginForm">
+<div class="d-flex justify-content-center align-items-center">
+    <div class="grandParentContainer">
+        <div class="parentContainer">
+            <div class="top">
+                <h1>Welcome to the Website!</h1>
+                <h1>Please Sign in to Your Account Below</h1>
+            </div>
+            <div class="info">
+                <form class="form-signin" method="post">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }}" role="alert"> {{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                     {% endwith %}
+
+
+                    <label for="inputUsername">Username</label><input type="text" id="inputUsername" class="form-control"
+                                                                  placeholder="Username" name="username" required autofocus>
+                    <label for="inputPassword">Password</label><input type="password" id="inputPassword"
+                                                                  class="form-control" placeholder="Password"
+                                                                  name="password" required autofocus>
+                    <br>
+                    <button class="btn btn-success" type="submit">Sign in</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="/register">
+                        <button type="button" class="btn btn-primary">Create a New Account</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>
