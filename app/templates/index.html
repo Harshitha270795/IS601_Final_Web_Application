@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+
+    <!-- Bootstrap CSS -->
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <title>{{title}}</title>
+</head>
+<style>
+    body#LoginForm {
+            background-color: #3b86b8;
+            background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 2500px;
+            padding: 10px;
+        }
+</style>
+{% block content %}
+<body id="LoginForm" >
+
+    <div class="container">
+        <h1 class="display-3">Cities Around the World</h1>
+        <br>
+        <p class="lead">
+            Welcome to cities around the world website!
+            <br><br>
+            This website is about cities around the world.
+            <br><br>
+            Click the links on the Nav Bar or the buttons below to view the data records, the team page, and the raw
+            data.
+            <br><br>
+            Finally, you can add new records using the "Add" button on the Nav Bar. You will also be able to view and
+            edit your profile data by clicking on the "my profile" tab.
+        </p>
+        <a class="btn btn-dark" href="/records" role="button">View Records</a>
+        <a class="btn btn-dark" href="/api/v1/cities" role="button">View Data</a>
+    </div>
+
+</body>
+{% endblock %}
+</html>
