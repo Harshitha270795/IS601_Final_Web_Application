@@ -1,0 +1,27 @@
+version: "2"
+services:
+  app:
+    build: ./app
+    container_name: "Flask_Apz"
+    links:
+      - db
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+    environment:
+      MAIL_USERNAME: ${MAIL_USERNAME}
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
+      SECRET_KEY: ${SECRET_KEY}
+      ADMIN_USER: ${ADMIN_USER}
+      ADMIN_PASS: ${ADMIN_PASS}
+
+  db:
+    image: mysql:5.7
+    container_name: "MySQL_Dz"
+    ports:
+      - "32000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: Darshan289030
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/:ro
