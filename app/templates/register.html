@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+
+    <!-- Bootstrap CSS -->
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <title>{{title}}</title>
+</head>
+<style>
+    body#LoginForm {
+            background-color: #3b86b8;
+            background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 800px;
+            padding: 10px;
+        }
+</style>
+<body id="LoginForm">
+<div class="d-flex justify-content-center align-items-center">
+    <div class="grandParentContainer">
+        <div class="parentContainer">
+            <div class="top">
+                <h1>Register for New Account</h1>
+            </div>
+
+            <div class="info">
+                <form class="form-register" method="post">
+                    <label for="newUsername">Enter a Username</label><input type="text" id="newUsername"
+                                                                            class="form-control"
+                                                                            placeholder="Enter Username"
+                                                                            name="username" required>
+                    <label for="inputEmail">Enter Email</label><input type="Email" id="inputEmail" class="form-control"
+                                                                      placeholder="Enter Email" name="email" required>
+                    <label for="newPassword">Enter a Password</label><input type="password" id="newPassword"
+                                                                            class="form-control"
+                                                                            placeholder="Enter Password"
+                                                                            name="password" required>
+                    <label for="confirmPassword">Confirm Password</label><input type="password" id="confirmPassword"
+                                                                                class="form-control"
+                                                                                placeholder="Confirm Password"
+                                                                                name="confirmpassword" required>
+                    <br>
+                    <button class="btn btn-success" type="submit">Register</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="/">
+                        <button type="button" class="btn btn-primary">Back to the Login Page</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
