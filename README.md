@@ -27,7 +27,6 @@
 7. Copy and paste the confirmation code into the box on the confirmation page
 8. Once confirmed, you can login into the account that you just registered 
 
-
 ## Developer Notes
 * My gmail account information as well as admin account information is inside of the .env file. You can log into the admin account by using the credentials inside of the .env file.
 * To view the document which contains screenshots click the link below.
